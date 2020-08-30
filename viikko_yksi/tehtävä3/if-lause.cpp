@@ -6,8 +6,18 @@ int main() {
     string nimet;
     cout << "mikä on nimesi?";
     getline (cin, nimet);
-    string ika;
+    int ika;
     cout << "ja monikomuotias olet?";
-    getline (cin, ika);
+    cin >> ika;
     cout << "olet "<< nimet <<", "<< ika << " vuotias" << ".\n";
+
+    if (ika > 68) {
+    cout << "olet eläkelainen";
+    } 
+    else if (ika < 18) {
+    cout << "olet alaikäinen";
+    }
+    else {
+    cout << "olet tyoikainen";
+    }
 }
