@@ -17,7 +17,7 @@ void printList(list <int> x)
  bool IsOdd (int i) { return ((i%2)==1); }
 int main()
 {
-    int temp=1;
+    int temp;
     list <int> numbers;
     while(temp != 0)
     {
@@ -31,8 +31,7 @@ int main()
         
     }
     int mycount = count_if (numbers.begin(), numbers.end(), IsOdd);
-    cout << "myvector contains " << mycount  << " odd values.\n";
+    cout << "list has " << mycount  << " odd values.";
 
 }
 
-//int mycount = count_if (myvector.begin(), myvector.end(), IsOdd);
